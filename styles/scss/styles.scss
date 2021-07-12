@@ -1,0 +1,14 @@
+// SCSS StyleSheets
+@import 'setup';
+@import 'mixins';
+@import 'variables';
+
+// Basic overall styling
+html {
+    font-size: 125%; 
+}
+
+body {
+    background-color: $primary; 
+}
+
