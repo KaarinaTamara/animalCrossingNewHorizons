@@ -277,7 +277,7 @@ h1 {
           transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   padding: 1.5rem;
-  border-radius: 8%;
+  border-radius: 1rem;
   text-transform: uppercase;
 }
 
@@ -294,7 +294,7 @@ main {
   background-color: #6C5D45;
   width: 80%;
   padding: 3rem;
-  border-radius: 8%;
+  border-radius: 1rem;
   margin: 0 auto;
 }
 
@@ -317,7 +317,7 @@ h3 {
   margin: 3rem;
   background-color: #EFE36A;
   padding: 2rem;
-  border-radius: 8%;
+  border-radius: 1rem;
   text-align: center;
 }
 
@@ -326,7 +326,7 @@ h3 {
   width: 100%;
   height: 100%;
   margin: auto;
-  border-radius: 8%;
+  border-radius: 1rem;
   padding: 5% 0;
 }
 
@@ -336,7 +336,7 @@ h3 {
   height: 90%;
   margin: auto;
   border: 8px solid #EFE36A;
-  border-radius: 8%;
+  border-radius: 1rem;
 }
 
 form {
@@ -350,7 +350,7 @@ form {
   background-color: #6C5D45;
   padding: 0.5rem;
   margin: 3rem;
-  border-radius: 5%;
+  border-radius: 0.5rem;
 }
 
 .inputBox select,
