@@ -8,7 +8,115 @@ html {
     font-size: 125%; 
 }
 
-body {
-    background-color: $primary; 
+p {
+    @include bodyFont(1rem, $secondary);
 }
 
+// Header styling
+
+header {
+    background-image: url(../assets/hero.jpg);
+    height: 80vh; 
+    background-attachment: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+}
+
+.acnhLogo {
+    position: absolute; 
+    top: 30%;
+    margin-left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    @include headerFont (3rem, $brown, 700);
+    position: absolute; 
+    bottom: 10%;   
+    margin-left: 50%; 
+    margin-right: -50%; 
+    transform: translate(-50%, -50%);
+    background-color: $headingsColour; 
+    padding: 1.5rem;  
+    border-radius: 8%;
+    text-transform: uppercase; 
+}
+
+
+// MAIN STYLING
+
+main {
+    background-image: url(../assets/pattern-leaves-white.jpg); 
+}
+
+// welcome section
+
+.wrapper { 
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+.welcomeBox {
+    background-color: $brown; 
+    width: 80%; 
+    padding: 3rem; 
+    border-radius: 8%; 
+    margin: 0 auto; 
+}
+
+h2 { 
+    @include headerFont (2.8rem, $secondary, 700);
+    margin-top: 0; 
+    text-align: center; 
+}
+
+h3 {
+    @include headerFont (2.5rem, $brown, 700);
+    margin: 3rem; 
+    background-color: $yellow; 
+    padding: 2rem; 
+    border-radius: 8%; 
+    text-align: center; 
+}
+
+
+// input
+
+.inputSection {
+    background-color: $headingsBackground; 
+    width: 100%; 
+    height: 100%; 
+    margin: auto; 
+    border-radius: 8%; 
+    padding: 5% 0;  
+}
+
+.inputBox {
+    background-color: $secondary;
+    width: 80%;  
+    height: 90%; 
+    margin: auto;
+    border: 8px solid $yellow; 
+    border-radius: 8%;  
+}
+
+form { 
+    margin: 0 auto; 
+    width: 80%;  
+}
+
+.inputBox label {
+    font-family: 'Libre Franklin', sans-serif; 
+    color: $secondary; 
+    background-color: $brown; 
+    padding: .5rem; 
+    margin: 3rem; 
+    border-radius: 5%;  
+}
+
+.inputBox select, 
+.inputBox input {
+    margin: 2rem; 
+}

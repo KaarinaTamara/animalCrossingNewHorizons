@@ -239,6 +239,121 @@ html {
   font-size: 125%;
 }
 
-body {
+p {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  color: #FAF4DE;
+}
+
+header {
+  background-image: url(../assets/hero.jpg);
+  height: 80vh;
+  background-attachment: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.acnhLogo {
+  position: absolute;
+  top: 30%;
+  margin-left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 3rem;
+  color: #6C5D45;
+  font-weight: 700;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 10%;
+  margin-left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 8%;
+  text-transform: uppercase;
+}
+
+main {
+  background-image: url(../assets/pattern-leaves-white.jpg);
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.welcomeBox {
+  background-color: #6C5D45;
+  width: 80%;
+  padding: 3rem;
+  border-radius: 8%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.8rem;
+  color: #FAF4DE;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.5rem;
+  color: #6C5D45;
+  font-weight: 700;
+  line-height: 1rem;
+  margin: 3rem;
   background-color: #EFE36A;
+  padding: 2rem;
+  border-radius: 8%;
+  text-align: center;
+}
+
+.inputSection {
+  background-color: #6db6a2;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 8%;
+  padding: 5% 0;
+}
+
+.inputBox {
+  background-color: #FAF4DE;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  border: 8px solid #EFE36A;
+  border-radius: 8%;
+}
+
+form {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.inputBox label {
+  font-family: "Libre Franklin", sans-serif;
+  color: #FAF4DE;
+  background-color: #6C5D45;
+  padding: 0.5rem;
+  margin: 3rem;
+  border-radius: 5%;
+}
+
+.inputBox select,
+.inputBox input {
+  margin: 2rem;
 }

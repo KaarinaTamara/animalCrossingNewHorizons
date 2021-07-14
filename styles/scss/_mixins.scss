@@ -1,5 +1,6 @@
 @mixin headerFont($fontSize, $color, $weight) {
-    font-family: 'Zilla Slab', serif;
+    // font-family: 'Zilla Slab', serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: $fontSize; 
     color: $color; 
     font-weight: $weight;
