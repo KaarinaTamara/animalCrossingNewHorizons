@@ -60,6 +60,11 @@ app.displayCritters = (critter) => {
   // append the list element to the ul element on the page
   liEl.appendChild(imgEl)
   ul.appendChild(liEl)
+
+  // add eventListener to each list item
+  liEl.addEventListener('click', () => {
+    console.log('clicked');
+  })
 }
 
 // a function that gets the user information
@@ -104,8 +109,9 @@ console.log(hemisphere, month, time);
 }
 
 // a function that grabs and displays critter info
-app.getCritterInfo = () => {
+app.critterInfo = () => {
   // when user clicks on the icon
+  
   // open modal
   // grab the critters info from the API
   // render info
