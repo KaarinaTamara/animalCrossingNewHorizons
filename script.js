@@ -30,7 +30,7 @@ app.init = () => {
 // a function that adds the months to the month select element
 app.displayMonth = (monthObj) => {
   const monthSelectEl = document.getElementById('month')
-
+  
   for (month in monthObj) {
     const monthEl = document.createElement('option')
     monthEl.setAttribute("value", monthObj[month])
@@ -60,6 +60,11 @@ app.displayCritters = (critter) => {
   // append the list element to the ul element on the page
   liEl.appendChild(imgEl)
   ul.appendChild(liEl)
+
+  // add eventListener to each list item
+  liEl.addEventListener('click', () => {
+    console.log('clicked');
+  })
 }
 
 // a function that gets the user information
@@ -82,6 +87,9 @@ app.searchCritters = (hemisphere, month, time) => {
 console.log(hemisphere, month, time);
   const crittersObj = app.getCritters()
   crittersObj.then(critters => {
+    // clear existing content
+    const gallery = document.querySelector('ul')
+    gallery.innerHTML = ""
     // loop through the critters and for each critter check
     critters.forEach(critter => {
       // if selected hemisphere is north, grab the month-array-northern array and check if the selected month is in that array
@@ -98,6 +106,15 @@ console.log(hemisphere, month, time);
       }
     })
   })
+}
+
+// a function that grabs and displays critter info
+app.critterInfo = () => {
+  // when user clicks on the icon
+  
+  // open modal
+  // grab the critters info from the API
+  // render info
 }
 
 // a function to convert 12hr time to 24

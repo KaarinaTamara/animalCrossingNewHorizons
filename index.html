@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css"> 
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Zilla+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Zilla+Slab&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="assets/logo-acnh-en.png" alt="Logo for Animal Crossing: New Horizons" class="acnhLogo">
@@ -22,10 +25,11 @@
             <section class="welcome">
                 <div class="welcomeBox">
                     <h2>Welcome!</h2>
-                    <p>There are many critters to find and we know you're excited to discover them all! Let Mr. Nook help you find them by providing him with some information below.</p>
+                    <p>There are many critters to find and we know you're excited to discover them all! Let Mr. Nook
+                        help you find them by providing him with some information below.</p>
                 </div>
             </section>
-            
+
             <h3>Let's get started!</h3>
 
             <section class="inputSection">
@@ -33,7 +37,9 @@
                     <form action="">
                         <label for="hemisphere">Hemisphere</label>
                         <select name="hemisphere" id="hemisphere">
-                            <!-- selection for north or south hemisphere appears here -->
+                            <option value="select" selected>Select</option>
+                            <option value="northern">Northern</option>
+                            <option value="southern">Southern</option>
                         </select>
                         <br>
                         <label for="month">Month</label>
@@ -43,13 +49,23 @@
                         <br>
                         <label for="time">Time</label>
                         <input type="text" name="time" id="time">
+
+                        <input type="submit">
+
                     </form>
-                </div>    
+                </div>
             </section>
-                
-        </div>    
+
+            <section>
+                <ul class="gallery">
+                    <!-- inserted dynamically -->
+                </ul>
+            </section>
+
+        </div>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
