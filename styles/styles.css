@@ -288,6 +288,7 @@ main {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
 .welcomeBox {
@@ -315,10 +316,13 @@ h3 {
   font-weight: 700;
   line-height: 1rem;
   margin: 3rem;
-  background-color: #EFE36A;
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
+}
+
+.start {
+  background-color: #EFE36A;
 }
 
 .inputSection {
@@ -328,13 +332,14 @@ h3 {
   margin: auto;
   border-radius: 1rem;
   padding: 5% 0;
+  position: relative;
 }
 
 .inputBox {
   background-color: #FAF4DE;
   width: 80%;
   height: 90%;
-  margin: auto;
+  margin: 0 auto;
   border: 8px solid #EFE36A;
   border-radius: 1rem;
 }
@@ -349,11 +354,70 @@ form {
   color: #FAF4DE;
   background-color: #6C5D45;
   padding: 0.5rem;
-  margin: 3rem;
   border-radius: 0.5rem;
+  width: 8rem;
+  display: inline-block;
+  text-align: center;
 }
 
 .inputBox select,
 .inputBox input {
-  margin: 2rem;
+  margin: 2rem -50% 2rem 50%;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #2C6970;
+  color: #FAF4DE;
+  padding: 0.5rem;
+}
+
+.nookImg {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+
+.critters {
+  margin-top: 5rem;
+  background-color: #FAF4DE;
+  border: 8px solid #2C6970;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.critters ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.critters li {
+  margin: 1rem auto;
+  border: 3px solid #6C5D45;
+  border-radius: 50%;
+}
+
+.critters li:hover,
+.critters li:focus {
+  border-color: #EFE36A;
+}
+
+.timTomImg {
+  width: 20%;
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+}
+
+footer {
+  background-color: #FAF4DE;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 2rem;
+  color: #6C5D45;
 }
